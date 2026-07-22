@@ -1286,7 +1286,7 @@ wallet2::wallet2(network_type nettype, uint64_t kdf_rounds, bool unattended, std
   m_pool_info_query_time(0),
   m_secondary_pool_info_query_time(0),
   m_has_ever_refreshed_from_node(false),
-  m_allow_mismatched_daemon_version(false),
+  m_allow_mismatched_daemon_version(true),
   m_curve_trees(fcmp_pp::curve_trees::curve_trees_v1()),
   m_tree_cache(fcmp_pp::curve_trees::TreeCacheV1(m_curve_trees, m_max_reorg_depth))
 {
@@ -5361,7 +5361,7 @@ bool wallet2::load_keys_buf(const std::string& keys_buf, const epee::wipeable_st
     m_key_device_type = hw::device::device_type::SOFTWARE;
     encrypted_secret_keys = false;
     m_enable_multisig = false;
-    m_allow_mismatched_daemon_version = false;
+    m_allow_mismatched_daemon_version = true;
     m_custom_background_key = boost::none;
   }
   else if(json.IsObject())
