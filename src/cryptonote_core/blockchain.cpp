@@ -31,6 +31,7 @@
 #include <algorithm>
 #include <cstdint>
 #include <cstdio>
+#include <mutex>
 #include <boost/asio/dispatch.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/range/adaptor/reversed.hpp>

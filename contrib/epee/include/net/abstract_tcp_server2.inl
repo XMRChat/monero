@@ -53,6 +53,7 @@
 #include <iomanip>
 #include <algorithm>
 #include <functional>
+#include <mutex>
 #include <random>
 
 #undef MONERO_DEFAULT_LOG_CATEGORY

@@ -36,6 +36,7 @@
 #include <boost/filesystem/operations.hpp>
 #include <boost/asio/strand.hpp>
 #include <condition_variable>
+#include <mutex>
 #include <boost/lambda/lambda.hpp>
 #include <openssl/ssl.h>
 #include <openssl/pem.h>

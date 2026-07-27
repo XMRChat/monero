@@ -44,6 +44,7 @@
 #include <boost/uuid/uuid_hash.hpp>
 #include <boost/uuid/uuid_io.hpp>
 #include <cstdint>
+#include <mutex>
 #include <unordered_map>
 #include <unordered_set>
 #include <shared_mutex>

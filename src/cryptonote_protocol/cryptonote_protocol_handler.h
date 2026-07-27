@@ -52,6 +52,7 @@
 #include "request_manager.h"
 #include <boost/circular_buffer.hpp>
 #include <atomic>
+#include <mutex>
 #include <boost/uuid/nil_generator.hpp>
 
 PUSH_WARNINGS

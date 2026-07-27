@@ -37,6 +37,7 @@
 #include "misc_log_ex.h"
 #include <cstddef>
 #include <cstdint>
+#include <mutex>
 
 void request_manager::remove_peer(const boost::uuids::uuid &peer_id) {
   MINFO("Removing all requests for disconnected peer: " << epee::string_tools::pod_to_hex(peer_id));

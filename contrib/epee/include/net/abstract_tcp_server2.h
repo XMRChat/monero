@@ -44,6 +44,7 @@
 #include <cassert>
 #include <map>
 #include <memory>
+#include <mutex>
 #include <condition_variable>
 
 #include <boost/asio.hpp>

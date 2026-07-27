@@ -41,6 +41,7 @@
 #include <chrono>
 #include <cstdint>
 #include <list>
+#include <mutex>
 #include <ctime>
 
 #include <cryptonote_core/cryptonote_core.h>
